@@ -1,5 +1,6 @@
 package com.springbytes.sb.micrometer;
 
+import bitronix.tm.TransactionManagerServices;
 import com.springbytes.sb.micrometer.model.Customer;
 import com.springbytes.sb.micrometer.repo.CustomerRepository;
 import org.slf4j.Logger;
@@ -22,8 +23,9 @@ public class SpringbootMicrometerExampleApplication {
 	public CommandLineRunner setupDB(CustomerRepository repository){
 
 		return (args) -> {
-			//repository.save(new Customer("Puneet", "Kankane"));
-			//repository.save(new Customer("John", "Doe"));
+			log.info("Default Transaction Timeout:");
+			log.info("-------------------------------");
+			log.info(String.valueOf(TransactionManagerServices.getConfiguration().getDefaultTransactionTimeout()));
 
 			log.info("List of Customers:");
 			log.info("-------------------------------");

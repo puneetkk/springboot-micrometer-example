@@ -9,12 +9,12 @@
     <changeSet id="0003" author="puneetkk">
         <comment>Inserting Customers</comment>
         <insert tableName="customer">
-            <column name="fname" value="John3"/>
-            <column name="lname" value="Doe"/>
+            <column name="fname" value="John4"/>
+            <column name="lname" value="Doe4"/>
         </insert>
         <insert tableName="customer">
-            <column name="fname" value="Stephen4"/>
-            <column name="lname" value="Smith"/>
+            <column name="fname" value="Stephen5"/>
+            <column name="lname" value="Smith5"/>
         </insert>
     </changeSet>
 </databaseChangeLog>

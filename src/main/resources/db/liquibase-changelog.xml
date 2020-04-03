@@ -9,4 +9,6 @@
     <include file="changelog/01-create-customer-schema.xml" relativeToChangelogFile="true"/>
     <include file="changelog/02-insert-data-customer.xml" relativeToChangelogFile="true"/>
     <include file="changelog/03-insert-data-customer.xml" relativeToChangelogFile="true"/>
+    <include file="changelog/04-insert-data-customer.xml" relativeToChangelogFile="true"/>
+    <include file="changelog/05-create-sequence-customer.xml" relativeToChangelogFile="true"/>
 </databaseChangeLog>
